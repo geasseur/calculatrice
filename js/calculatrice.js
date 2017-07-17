@@ -46,6 +46,18 @@ function ajouterChiffre(chiffreRecupere){
   }
 
 }
+
+function recommencer(){
+  dernierResultat = 0;
+  resultat = 0;
+  chiffre1 = 0;
+  chiffre2 = 0;
+  nombre1 = 0;
+  nombre2 = 0;
+  signe = "";
+  affichage.value = "";
+}
+
 //Recupéré le signe de l'opération
 function ajouterSigne(signeRecupere){
   signe = signeRecupere;
@@ -64,13 +76,13 @@ function effacer(){
     chiffre1 -= chiffre1;
     console.log(chiffre1);
   }
-  else if (chiffre1 != 0 && signe != "") {
+  else if (chiffre1 != 0 && signe != "" && chiffre2 ==0) {
     signe -= signe;
     console.log(signe);
   }
-  else if (signe != "" && chiffre2 != 0) {
+  else if (signe != "" && chiffre2 != 0 && dernierResultat == 0) {
     chiffre2 -= chiffre2;
-    console.log(chiffre2);
+    console.log("effacement: "+chiffre2);
   }
 }
 
