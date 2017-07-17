@@ -1,3 +1,10 @@
+.calculette{
+  widows: 20%;
+  margin: 50px 40%;
+  border-radius: 52px;
+  border: 3px solid #000;
+}
+
 #affichage{
   width: 80%;
   margin: 20px 10%;
@@ -12,10 +19,18 @@
 }
 
 #listChiffre>.chiffre{
-  width: 30%;
+  width: 25%;
   margin: 10px 5px;
 }
 
 .signe{
   width: 20%;
+}
+
+.bouton{
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
