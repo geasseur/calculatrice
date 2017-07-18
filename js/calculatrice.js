@@ -67,6 +67,7 @@ function ajouterSigne(signeRecupere){
 function effacer(){
   if (dernierResultat != 0 && chiffre2 !=0) {
     chiffre2 -= chiffre2;
+    affichage.value = "";
   }
   else if(dernierResultat != 0){
     signe -= signe;
@@ -75,6 +76,7 @@ function effacer(){
   else if (chiffre1 != 0 && signe =="") {
     chiffre1 -= chiffre1;
     console.log(chiffre1);
+    affichage.value = "";
   }
   else if (chiffre1 != 0 && signe != "" && chiffre2 ==0) {
     signe -= signe;
@@ -83,6 +85,7 @@ function effacer(){
   else if (signe != "" && chiffre2 != 0 && dernierResultat == 0) {
     chiffre2 -= chiffre2;
     console.log("effacement: "+chiffre2);
+    affichage.value = "";
   }
 }
 
