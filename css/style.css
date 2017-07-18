@@ -1,6 +1,6 @@
 .calculette{
-  widows: 20%;
-  margin: 50px 40%;
+  width: 60%;
+  margin: 150px 20%;
   border-radius: 52px;
   border: 3px solid #000;
 }
@@ -33,4 +33,23 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+
+@media (min-width: 800px) {
+  .calculette{
+  width: 40%;
+  margin: 150px 30%;
+  }
+}
+@media (min-width: 1000px) {
+  .calculette{
+  width: 30%;
+  margin: 150px 35%;
+  }
+}
+@media (min-width: 1200px) {
+  .calculette{
+  width: 20%;
+  margin: 150px 40%;
+  }
 }
